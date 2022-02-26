@@ -3,6 +3,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "./App.scss";
 import Form from "./Components/Form/Form";
 import List from "./Components/List/List";
+import Statistics from "./Components/Statistics/Statistics";
 
 function App() {
   const [course_name, setCourse_name] = useState("");
@@ -65,11 +66,9 @@ function App() {
     // clone
     let new_course_list = [...course_list];
     // get course we want to update its value
-    let course_to_update = new_course_list.find(
-      (value) => c_name_before_update === value.name
-    );
+    let course = new_course_list.find((v) => c_name_before_update === v.name);
     // edit
-    course_to_update.name = course_name;
+    course.name = course_name;
     // set state
     setCourse_list(new_course_list);
     // toggle is_edit variable to false
@@ -95,6 +94,8 @@ function App() {
         handle_delete={handle_delete}
         handle_edit_in_list={handle_edit_in_list}
       ></List>
+
+      <Statistics number_of_courses={course_list.length}></Statistics>
 
       <ToastContainer position="bottom-right" />
     </div>

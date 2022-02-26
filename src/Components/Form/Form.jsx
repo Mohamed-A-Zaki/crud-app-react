@@ -10,12 +10,24 @@ const Form = ({
   let inp_ref = createRef();
 
   // to auto focus after each update
-  useEffect(() => {
-    inp_ref.current.focus();
-  });
+  // useEffect(() => {
+  //   inp_ref.current.focus();
+  // });
 
-  let edit_btn = <button onClick={handle_edit_in_form}>Edit Course</button>;
-  let add_btn = <button onClick={handle_add}>Add Course</button>;
+  // edit button
+  let edit_btn = (
+    <button className="edit" onClick={handle_edit_in_form}>
+      Edit Course
+    </button>
+  );
+
+  // add button
+  let add_btn = (
+    <button className="add" onClick={handle_add}>
+      Add Course
+    </button>
+  );
+
   return (
     <form>
       <input
@@ -23,6 +35,7 @@ const Form = ({
         ref={inp_ref}
         value={course_name}
         onChange={handle_change}
+        autoFocus
       />
       {is_edit ? edit_btn : add_btn}
     </form>
