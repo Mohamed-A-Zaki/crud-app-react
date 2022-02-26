@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+@mixin btn($bg_color) {
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  background-color: $bg_color;
+  cursor: pointer;
+}
+
+.App {
+  width: 75%;
+  background-color: #eee;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+
+  h1 {
+    margin: 0;
+    background-color: #f2c644;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  form {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    input {
+      flex: 1;
+      padding: 10px;
+      font-size: 20px;
+      border: none;
+      outline: none;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    button {
+      @include btn(#009688);
+    }
+  }
+
+  .courses {
+    .empty {
+      background-color: #f44336;
+      color: #fff;
+      padding: 10px;
+      font-size: 20px;
+      letter-spacing: 1px;
+      border-radius: 5px;
+    }
+
+    .course {
+      padding: 10px 18px;
+      background-color: #fff;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+
+      .name {
+        flex: 1;
+        text-align: left;
+        font-size: 20px;
+      }
+      .edit {
+        @include btn(#3f51b5);
+      }
+      .delete {
+        @include btn(#e91e63);
+        margin-left: 10px;
+      }
+    }
+  }
+}
