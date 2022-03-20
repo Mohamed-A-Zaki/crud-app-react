@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "./App.scss";
 import Form from "./Components/Form/Form";
@@ -10,6 +10,16 @@ function App() {
   const [course_list, setCourse_list] = useState([]);
   const [is_edit, setIs_edit] = useState(false);
   const [c_name_before_update, setC_name_before_update] = useState("");
+
+  useEffect(() => {
+    if (localStorage.getItem("courses")) {
+      setCourse_list(JSON.parse(localStorage.getItem("courses")));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("courses", JSON.stringify(course_list));
+  }, [course_list]);
 
   function handle_change(e) {
     // get value from input field
