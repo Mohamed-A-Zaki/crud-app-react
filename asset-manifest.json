@@ -1,21 +1,24 @@
 {
   "files": {
     "main.css": "/crud-app-react/static/css/main.21b07b31.css",
-    "main.js": "/crud-app-react/static/js/main.af014a26.js",
+    "main.js": "/crud-app-react/static/js/main.1c3ac2ad.js",
+    "static/js/787.b701888c.chunk.js": "/crud-app-react/static/js/787.b701888c.chunk.js",
     "static/media/fa-solid-900.ttf": "/crud-app-react/static/media/fa-solid-900.79da213423ac0def2058.ttf",
     "static/media/fa-brands-400.ttf": "/crud-app-react/static/media/fa-brands-400.0a1b701f5563c2288281.ttf",
     "static/media/fa-solid-900.woff2": "/crud-app-react/static/media/fa-solid-900.4896d4b04430cc3dfb06.woff2",
     "static/media/fa-brands-400.woff2": "/crud-app-react/static/media/fa-brands-400.f77bcc98bb7468c8b15a.woff2",
     "static/media/fa-regular-400.ttf": "/crud-app-react/static/media/fa-regular-400.15d98c18221c8bcb2334.ttf",
+    "service-worker.js": "/crud-app-react/service-worker.js",
     "static/media/fa-regular-400.woff2": "/crud-app-react/static/media/fa-regular-400.d79c2ec96ab9ff1161a2.woff2",
     "static/media/fa-v4compatibility.ttf": "/crud-app-react/static/media/fa-v4compatibility.52eba2c567c521b8d58a.ttf",
     "static/media/fa-v4compatibility.woff2": "/crud-app-react/static/media/fa-v4compatibility.3d503f89ccaf1b224aa5.woff2",
     "index.html": "/crud-app-react/index.html",
     "main.21b07b31.css.map": "/crud-app-react/static/css/main.21b07b31.css.map",
-    "main.af014a26.js.map": "/crud-app-react/static/js/main.af014a26.js.map"
+    "main.1c3ac2ad.js.map": "/crud-app-react/static/js/main.1c3ac2ad.js.map",
+    "787.b701888c.chunk.js.map": "/crud-app-react/static/js/787.b701888c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.21b07b31.css",
-    "static/js/main.af014a26.js"
+    "static/js/main.1c3ac2ad.js"
   ]
 }
